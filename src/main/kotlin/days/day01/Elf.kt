@@ -13,5 +13,5 @@ data class Elf(
     }
 
     val totalCalories : Calorie get() =
-        meals.fold(Calorie(0)) { acc, meal -> acc + meal }
+        meals.fold(Calorie(0), Calorie::plus)
 }
