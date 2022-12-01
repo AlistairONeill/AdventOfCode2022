@@ -15,38 +15,11 @@ class Day1Test {
         )
             .isEqualTo(
                 Elves(
-                    listOf(
-                        Elf(
-                            listOf(
-                                Calorie(1000),
-                                Calorie(2000),
-                                Calorie(3000),
-                            )
-                        ),
-                        Elf(
-                            listOf(
-                                Calorie(4000)
-                            )
-                        ),
-                        Elf(
-                            listOf(
-                                Calorie(5000),
-                                Calorie(6000)
-                            )
-                        ),
-                        Elf(
-                            listOf(
-                                Calorie(7000),
-                                Calorie(8000),
-                                Calorie(9000),
-                            )
-                        ),
-                        Elf(
-                            listOf(
-                                Calorie(10000)
-                            )
-                        )
-                    )
+                    Elf(1000, 2000, 3000),
+                    Elf(4000),
+                    Elf(5000, 6000),
+                    Elf(7000, 8000, 9000),
+                    Elf(10000)
                 )
             )
     }

@@ -7,26 +7,10 @@ import strikt.assertions.isEqualTo
 import strikt.assertions.single
 
 class ElvesTest {
-    private val jim = Elf(
-        listOf(
-            Calorie(1),
-            Calorie(2)
-        )
-    )
+    private val jim = Elf(1, 2)
+    private val dave = Elf(3, 4)
+    private val mick = Elf(1, 5)
 
-    private val dave = Elf(
-        listOf(
-            Calorie(3),
-            Calorie(4)
-        )
-    )
-
-    private val mick = Elf(
-        listOf(
-            Calorie(1),
-            Calorie(5)
-        )
-    )
     @Test
     fun `can parse for single elf`() {
         expectThat(
@@ -37,12 +21,7 @@ class ElvesTest {
             .get { value }
             .single()
             .isEqualTo(
-                Elf(
-                    listOf(
-                        Calorie(123),
-                        Calorie(456)
-                    )
-                )
+                Elf(123, 456)
             )
     }
 
@@ -55,20 +34,8 @@ class ElvesTest {
         )
             .isEqualTo(
                 Elves(
-                    listOf(
-                        Elf(
-                            listOf(
-                                Calorie(123),
-                                Calorie(456)
-                            )
-                        ),
-                        Elf(
-                            listOf(
-                                Calorie(789),
-                                Calorie(1011)
-                            )
-                        )
-                    )
+                    Elf(123, 456),
+                    Elf(789, 1011)
                 )
             )
     }
@@ -77,9 +44,7 @@ class ElvesTest {
     fun `can find the Elf with the most calories`() {
         expectThat(
             Elves(
-                listOf(
-                    jim, dave, mick
-                )
+                jim, dave, mick
             )
         )
             .get { fattest }
@@ -90,9 +55,7 @@ class ElvesTest {
     fun `can find the Elves with the most calories`() {
         expectThat(
             Elves(
-                listOf(
-                    jim, dave, mick
-                )
+                jim, dave, mick
             )
         )
             .get { getFattest(2) }
@@ -106,35 +69,17 @@ class ElvesTest {
         expectThat(
             Elves(
                 listOf(
-                    Elf(
-                        listOf(
-                            Calorie(1),
-                            Calorie(2)
-                        )
-                    ),
-                    Elf(
-                        listOf(
-                            Calorie(1),
-                            Calorie(2)
-                        )
-                    )
+                    Elf(1, 2),
+                    Elf(1, 2)
                 )
             )
         )
             .get { getFattest(2) }
             .containsExactlyInAnyOrder(
-                Elf(
-                    listOf(
-                        Calorie(1),
-                        Calorie(2)
-                    )
-                ),
-                Elf(
-                    listOf(
-                        Calorie(1),
-                        Calorie(2)
-                    )
-                )
+                Elf(1, 2),
+                Elf(1, 2)
             )
     }
 }
+
+operator fun Elves.Companion.invoke(vararg elves: Elf) = Elves(elves.toList())

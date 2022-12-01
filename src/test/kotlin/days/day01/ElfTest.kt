@@ -13,11 +13,7 @@ class ElfTest {
             )
         )
             .isEqualTo(
-                Elf(
-                    listOf(
-                        Calorie(123)
-                    )
-                )
+                Elf(123)
             )
     }
 
@@ -29,24 +25,14 @@ class ElfTest {
             )
         )
             .isEqualTo(
-                Elf(
-                    listOf(
-                        Calorie(123),
-                        Calorie(456)
-                    )
-                )
+                Elf(123, 456)
             )
     }
 
     @Test
     fun `can calculate the total calories`() {
         expectThat(
-            Elf(
-                listOf(
-                    Calorie(1),
-                    Calorie(2)
-                )
-            )
+            Elf(1, 2)
         )
             .get { totalCalories }
             .isEqualTo(
@@ -54,3 +40,8 @@ class ElfTest {
             )
     }
 }
+
+operator fun Elf.Companion.invoke(vararg meals: Long) =
+    meals
+        .map(::Calorie)
+        .let(::Elf)
