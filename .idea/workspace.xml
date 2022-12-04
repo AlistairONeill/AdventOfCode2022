@@ -4,15 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ce67c48-829c-4eec-a257-3ee7e0361479" name="Changes" comment="Make functional">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/days/day02/Day2.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/days/day02/StrategyGuide.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/days/day02/Tournament.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/days/day02/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/days/day02/Day2Test.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/days/day02/StrategyGuideTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/days/day02/TournamentTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/days/day02/testInput.txt" afterDir="false" />
+    <list default="true" id="7ce67c48-829c-4eec-a257-3ee7e0361479" name="Changes" comment="Day2 fugly">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/days/day03/Day3.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/days/day03/Rucksack.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/days/day03/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/days/day03/Day3Test.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/days/day03/RucksackTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/days/day03/testInput.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
     </list>
@@ -60,9 +58,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
-        <option value="Kotlin File" />
         <option value="Kotlin Class" />
+        <option value="Kotlin File" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -101,11 +99,12 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="days.day03" />
       <recent name="days.day01" />
     </key>
   </component>
   <component name="RunManager" selected="Kotlin.MainKt">
-    <configuration name="Day2Test.can solve part 1 with test input" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Day3Test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -118,7 +117,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;days.day02.Day2Test.can solve part 1 with test input&quot;" />
+            <option value="&quot;days.day03.Day3Test&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -128,7 +127,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Day2Test.can solve part 2 with test input" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Day3Test.can solve part 2 with test input" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -141,7 +140,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;days.day02.Day2Test.can solve part 2 with test input&quot;" />
+            <option value="&quot;days.day03.Day3Test.can solve part 2 with test input&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -151,7 +150,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="StrategyGuideTest.can convert entry to a tournament round part 2" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="RucksackTest.can find label for groups of rucksacks" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -164,7 +163,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;days.day02.StrategyGuideTest.can convert entry to a tournament round part 2&quot;" />
+            <option value="&quot;days.day03.RucksackTest.can find label for groups of rucksacks&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -174,7 +173,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TournamentTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="RucksackTest.character priorities are mapped correctly" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -187,7 +186,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;days.day02.TournamentTest&quot;" />
+            <option value="&quot;days.day03.RucksackTest.character priorities are mapped correctly&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -207,10 +206,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Kotlin.MainKt" />
-        <item itemvalue="Gradle.Day2Test.can solve part 2 with test input" />
-        <item itemvalue="Gradle.StrategyGuideTest.can convert entry to a tournament round part 2" />
-        <item itemvalue="Gradle.Day2Test.can solve part 1 with test input" />
-        <item itemvalue="Gradle.TournamentTest" />
+        <item itemvalue="Gradle.Day3Test.can solve part 2 with test input" />
+        <item itemvalue="Gradle.RucksackTest.can find label for groups of rucksacks" />
+        <item itemvalue="Gradle.Day3Test" />
+        <item itemvalue="Gradle.RucksackTest.character priorities are mapped correctly" />
       </list>
     </recent_temporary>
   </component>
@@ -226,7 +225,9 @@
       <workItem from="1669926493667" duration="6991000" />
       <workItem from="1669937675457" duration="482000" />
       <workItem from="1669969097249" duration="228000" />
-      <workItem from="1669969571772" duration="1422000" />
+      <workItem from="1669969571772" duration="1721000" />
+      <workItem from="1670058929804" duration="2197000" />
+      <workItem from="1670172580953" duration="349000" />
     </task>
     <task id="LOCAL-00001" summary="Hello World">
       <created>1669930661908</created>
@@ -256,7 +257,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669937881222</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Day2 fugly">
+      <created>1669971300965</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1669971300965</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -267,7 +275,19 @@
     <MESSAGE value="Day1" />
     <MESSAGE value="Tidy" />
     <MESSAGE value="Make functional" />
-    <option name="LAST_COMMIT_MESSAGE" value="Make functional" />
+    <MESSAGE value="Day2 fugly" />
+    <option name="LAST_COMMIT_MESSAGE" value="Day2 fugly" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/Main.kt</url>
+          <line>12</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
