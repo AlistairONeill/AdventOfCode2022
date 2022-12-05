@@ -4,13 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ce67c48-829c-4eec-a257-3ee7e0361479" name="Changes" comment="Day3">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/days/day04/CleaningAssignment.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/days/day04/Day4.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/days/day04/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/days/day04/CleaningAssignmentTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/days/day04/Day4Test.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/days/day04/testInput.txt" afterDir="false" />
+    <list default="true" id="7ce67c48-829c-4eec-a257-3ee7e0361479" name="Changes" comment="Utility for splitting lists">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/days/day05/CrateStacks.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/days/day05/Day5.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/days/day05/Step.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/days/day05/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/days/day05/CrateStacksTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/days/day05/Day5Test.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/days/day05/StepTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/days/day05/testInput.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
     </list>
@@ -99,13 +101,15 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="days.day05" />
+      <recent name="underware" />
       <recent name="days.day04" />
       <recent name="days.day03" />
       <recent name="days.day01" />
     </key>
   </component>
   <component name="RunManager" selected="Kotlin.MainKt">
-    <configuration name="CleaningAssignmentTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CrateStacksTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -118,7 +122,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;days.day04.CleaningAssignmentTest&quot;" />
+            <option value="&quot;days.day05.CrateStacksTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -128,7 +132,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Day4Test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CrateStacksTest.can read top crate of each stack" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -141,30 +145,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;days.day04.Day4Test&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="Day4Test.can parse test puzzle input" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;days.day04.Day4Test.can parse test puzzle input&quot;" />
+            <option value="&quot;days.day05.CrateStacksTest.can read top crate of each stack&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -187,7 +168,30 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;days.day04.Day4Test.can solve part 1 with test input&quot;" />
+            <option value="&quot;days.day05.Day4Test.can solve part 1 with test input&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Day4Test.can solve part 2 with test input" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;days.day05.Day4Test.can solve part 2 with test input&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -207,10 +211,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Kotlin.MainKt" />
-        <item itemvalue="Gradle.Day4Test" />
-        <item itemvalue="Gradle.CleaningAssignmentTest" />
+        <item itemvalue="Gradle.Day4Test.can solve part 2 with test input" />
+        <item itemvalue="Gradle.CrateStacksTest" />
         <item itemvalue="Gradle.Day4Test.can solve part 1 with test input" />
-        <item itemvalue="Gradle.Day4Test.can parse test puzzle input" />
+        <item itemvalue="Gradle.CrateStacksTest.can read top crate of each stack" />
       </list>
     </recent_temporary>
   </component>
@@ -228,7 +232,9 @@
       <workItem from="1669969097249" duration="228000" />
       <workItem from="1669969571772" duration="1721000" />
       <workItem from="1670058929804" duration="2197000" />
-      <workItem from="1670172580953" duration="2107000" />
+      <workItem from="1670172580953" duration="2386000" />
+      <workItem from="1670248051371" duration="1954000" />
+      <workItem from="1670261802192" duration="943000" />
     </task>
     <task id="LOCAL-00001" summary="Hello World">
       <created>1669930661908</created>
@@ -272,7 +278,21 @@
       <option name="project" value="LOCAL" />
       <updated>1670173230113</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Day4">
+      <created>1670174857729</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1670174857729</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Utility for splitting lists">
+      <created>1670248639585</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1670248639585</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -285,7 +305,9 @@
     <MESSAGE value="Make functional" />
     <MESSAGE value="Day2 fugly" />
     <MESSAGE value="Day3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Day3" />
+    <MESSAGE value="Day4" />
+    <MESSAGE value="Utility for splitting lists" />
+    <option name="LAST_COMMIT_MESSAGE" value="Utility for splitting lists" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>
