@@ -4,16 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ce67c48-829c-4eec-a257-3ee7e0361479" name="Changes" comment="Day6">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/days/day07/Day7.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/days/day07/FileSystem.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/days/day07/FileSystemBuilder.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/days/day07/LogOutput.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/days/day07/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/days/day07/Day7Test.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/days/day07/FileSystemBuilderTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/days/day07/LogOutputTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/days/day07/testInput.txt" afterDir="false" />
+    <list default="true" id="7ce67c48-829c-4eec-a257-3ee7e0361479" name="Changes" comment="Day7">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/days/day08/Day8.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/days/day08/Forest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/days/day08/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/days/day08/Day8Test.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/days/day08/ForestTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/days/day08/testInput.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
     </list>
@@ -106,15 +103,15 @@
       <recent name="days.day07" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="days.day08" />
       <recent name="days.day07" />
       <recent name="days.day06" />
       <recent name="days.day05" />
       <recent name="underware" />
-      <recent name="days.day04" />
     </key>
   </component>
   <component name="RunManager" selected="Kotlin.MainKt">
-    <configuration name="Day7Test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CartesianVisibility.debug" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -127,7 +124,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;days.day07.Day7Test&quot;" />
+            <option value="&quot;days.day08.ForestTest$CartesianVisibility.debug&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -137,7 +134,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Day7Test.can solve part 2 with test input" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CartesianVisibility.example seven" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -150,7 +147,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;days.day07.Day7Test.can solve part 2 with test input&quot;" />
+            <option value="&quot;days.day08.ForestTest$CartesianVisibility.example seven&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -160,7 +157,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="FileSystemBuilderTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Day8Test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -173,7 +170,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;days.day07.FileSystemBuilderTest&quot;" />
+            <option value="&quot;days.day08.Day8Test&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -183,7 +180,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="LogOutputTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ForestTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -196,7 +193,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;days.day07.LogOutputTest&quot;" />
+            <option value="&quot;days.day08.ForestTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -216,10 +213,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Kotlin.MainKt" />
-        <item itemvalue="Gradle.Day7Test.can solve part 2 with test input" />
-        <item itemvalue="Gradle.Day7Test" />
-        <item itemvalue="Gradle.FileSystemBuilderTest" />
-        <item itemvalue="Gradle.LogOutputTest" />
+        <item itemvalue="Gradle.Day8Test" />
+        <item itemvalue="Gradle.ForestTest" />
+        <item itemvalue="Gradle.CartesianVisibility.example seven" />
+        <item itemvalue="Gradle.CartesianVisibility.debug" />
       </list>
     </recent_temporary>
   </component>
@@ -242,6 +239,7 @@
       <workItem from="1670261802192" duration="989000" />
       <workItem from="1670328189362" duration="1118000" />
       <workItem from="1670418681640" duration="3152000" />
+      <workItem from="1670524392262" duration="4647000" />
     </task>
     <task id="LOCAL-00001" summary="Hello World">
       <created>1669930661908</created>
@@ -313,7 +311,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670329276902</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Day7">
+      <created>1670524405818</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1670524405818</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -330,7 +335,8 @@
     <MESSAGE value="Utility for splitting lists" />
     <MESSAGE value="Day5" />
     <MESSAGE value="Day6" />
-    <option name="LAST_COMMIT_MESSAGE" value="Day6" />
+    <MESSAGE value="Day7" />
+    <option name="LAST_COMMIT_MESSAGE" value="Day7" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>
