@@ -4,15 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ce67c48-829c-4eec-a257-3ee7e0361479" name="Changes" comment="Day8 Rough">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/days/day09/Command.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/days/day09/Day9.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/days/day09/RopeModel.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/days/day09/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/days/day09/CommandTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/days/day09/Day9Test.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/days/day09/testInput.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/days/day09/testInput2.txt" afterDir="false" />
+    <list default="true" id="7ce67c48-829c-4eec-a257-3ee7e0361479" name="Changes" comment="Day[J]">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/days/day10/CRT.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/days/day10/Command.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/days/day10/Day10.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/days/day10/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/days/day10/Day10Test.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/days/day10/testInput.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
     </list>
@@ -61,8 +59,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Object" />
-        <option value="Kotlin Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Kotlin Class" />
         <option value="Kotlin File" />
       </list>
     </option>
@@ -112,7 +110,7 @@
       <recent name="days.day05" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Day9Test">
+  <component name="RunManager" selected="Kotlin.MainKt">
     <configuration name="CommandTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -136,7 +134,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Day8Test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Day10Test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -149,7 +147,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;days.day08.Day8Test&quot;" />
+            <option value="&quot;days.day10.Day10Test&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -214,11 +212,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.Day9Test" />
         <item itemvalue="Kotlin.MainKt" />
+        <item itemvalue="Gradle.Day10Test" />
+        <item itemvalue="Gradle.Day9Test" />
         <item itemvalue="Gradle.Day9Test.can solve part 1 with test input" />
         <item itemvalue="Gradle.CommandTest" />
-        <item itemvalue="Gradle.Day8Test" />
       </list>
     </recent_temporary>
   </component>
@@ -242,7 +240,8 @@
       <workItem from="1670328189362" duration="1118000" />
       <workItem from="1670418681640" duration="3152000" />
       <workItem from="1670524392262" duration="4667000" />
-      <workItem from="1670589550956" duration="2071000" />
+      <workItem from="1670589550956" duration="2319000" />
+      <workItem from="1670680845425" duration="1694000" />
     </task>
     <task id="LOCAL-00001" summary="Hello World">
       <created>1669930661908</created>
@@ -328,7 +327,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670570823102</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Day[J]">
+      <created>1670591812655</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1670591812655</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -347,7 +353,8 @@
     <MESSAGE value="Day6" />
     <MESSAGE value="Day7" />
     <MESSAGE value="Day8 Rough" />
-    <option name="LAST_COMMIT_MESSAGE" value="Day8 Rough" />
+    <MESSAGE value="Day[J]" />
+    <option name="LAST_COMMIT_MESSAGE" value="Day[J]" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>
