@@ -1,8 +1,8 @@
-import days.day13.Day13
+import days.day14.Day14
 
 fun main() {
-    Day13.part2(
-        Day13.input
+    Day14.part2(
+        Day14.input
     )
         .let(::println)
 }
