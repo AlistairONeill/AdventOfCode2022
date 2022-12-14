@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ce67c48-829c-4eec-a257-3ee7e0361479" name="Changes" comment="Day10">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/days/day11/Day11.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/days/day11/KeepAway.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/days/day11/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/days/day11/Day11Test.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/days/day11/testInput.txt" afterDir="false" />
+    <list default="true" id="7ce67c48-829c-4eec-a257-3ee7e0361479" name="Changes" comment="Day 11">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/days/day12/Day12.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/days/day12/SurfaceMap.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/days/day12/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/days/day12/Day12Test.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/days/day12/testInput.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
     </list>
@@ -156,6 +156,29 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="Day12Test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;days.day12.Day12Test&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="Day9Test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -179,29 +202,6 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Day9Test.can solve part 1 with test input" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;days.day09.Day9Test.can solve part 1 with test input&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainKt" />
       <module name="AdventOfCode2022.main" />
@@ -212,10 +212,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Kotlin.MainKt" />
+        <item itemvalue="Gradle.Day12Test" />
         <item itemvalue="Gradle.Day11Test" />
         <item itemvalue="Gradle.Day10Test" />
         <item itemvalue="Gradle.Day9Test" />
-        <item itemvalue="Gradle.Day9Test.can solve part 1 with test input" />
       </list>
     </recent_temporary>
   </component>
@@ -241,7 +241,7 @@
       <workItem from="1670524392262" duration="4667000" />
       <workItem from="1670589550956" duration="2319000" />
       <workItem from="1670680845425" duration="2299000" />
-      <workItem from="1671046914235" duration="2551000" />
+      <workItem from="1671046914235" duration="4643000" />
     </task>
     <task id="LOCAL-00001" summary="Hello World">
       <created>1669930661908</created>
@@ -341,7 +341,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670682564635</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Day 11">
+      <created>1671049593692</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1671049593692</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -362,7 +369,8 @@
     <MESSAGE value="Day8 Rough" />
     <MESSAGE value="Day[J]" />
     <MESSAGE value="Day10" />
-    <option name="LAST_COMMIT_MESSAGE" value="Day10" />
+    <MESSAGE value="Day 11" />
+    <option name="LAST_COMMIT_MESSAGE" value="Day 11" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>
