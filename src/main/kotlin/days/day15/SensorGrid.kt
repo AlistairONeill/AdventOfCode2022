@@ -1,52 +1,50 @@
 package days.day15
 
+import kotlin.math.max
+
 class SensorGrid(
-    sensors: Set<Sensor>
+    private val sensors: List<Sensor>
 ) {
     companion object {
         fun parse(input: String) =
             input.lines()
                 .map(Sensor::parse)
-                .toSet()
                 .let(::SensorGrid)
     }
 
-    private val sensors = sensors.sortedByDescending(Sensor::range)
+    fun countOfNoBeacons(y: Long): Int {
+        val ranges = sensors
+            .mapNotNull { sensor -> sensor.getXRange(y) }
 
-    fun countOfNoBeacons(y: Long) : Int =
-        (sensors.minOf(Sensor::minX) .. sensors.maxOf(Sensor::maxX))
-            .count { x ->
-                val point = Point(x, y)
-                val results = sensors.map { sensor -> sensor.isBeacon(point) }
+        return (sensors.minOf(Sensor::minX)..sensors.maxOf(Sensor::maxX))
+            .count { test ->
+                ranges.any { (x, y) ->
+                    test in x..y
+                }
+            } - sensors.map(Sensor::closestBeacon).toSet().count { it.y == y }
+    }
 
-                when {
-                    results.any { it == true } -> false
-                    results.any { it == false } -> true
-                    else -> false
+    fun findBeacon(min: Long, max: Long): Point {
+        (min..max)
+            .forEach { y ->
+                try {
+                    sensors
+                        .mapNotNull { sensor -> sensor.getXRange(y) }
+                        .sortedBy(Pair<Long, Long>::first)
+                        .reduceOrNull { range1, range2 ->
+                            when {
+                                range1.second >= range2.first -> range1.first to max(range1.second, range2.second)
+                                range1.second == range2.first - 2 -> throw XValue(range1.second + 1)
+                                else -> throw RuntimeException("Puzzle says this isn't possible")
+                            }
+                        }
+                } catch (e: XValue) {
+                    return Point(e.x, y)
                 }
             }
 
-    fun findBeacon(min: Long, max: Long) : Point =
-        (min .. max)
-            .asSequence()
-            .flatMap { x ->
-                (min .. max)
-                    .asSequence()
-                    .map { y -> Point(x, y) }
-            }
-            .first(::isBeacon)
-
-    private val s = sensors.size
-    private var i = 0
-
-    private fun isBeacon(point: Point) : Boolean {
-        val j = i
-        do {
-            if (sensors[i].isBeacon(point) != null) return false
-            i += 1
-            i %= s
-        } while (j != i)
-
-        return true
+        throw RuntimeException("Didn't find solution :(")
     }
 }
+
+private class XValue(val x: Long) : Exception()

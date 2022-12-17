@@ -1,5 +1,7 @@
 package days.day15
 
+import kotlin.math.abs
+
 data class Sensor(
     val location: Point,
     val closestBeacon: Point
@@ -21,14 +23,19 @@ data class Sensor(
                 }
     }
 
-    val range = location.manhatten(closestBeacon)
+    private val range = location.manhatten(closestBeacon)
     val minX = location.x - range
     val maxX = location.x + range
 
-    fun isBeacon(point: Point) : Boolean? =
-        when {
-            point == closestBeacon -> true
-            location.within(point, range) -> false
-            else -> null
-        }
+    fun getXRange(y: Long) : Pair<Long, Long>? =
+        getXWidth(y)
+            ?.let { width ->
+                location.x - width to location.x + width
+            }
+
+    private fun getXWidth(y: Long) : Long? {
+        val yDiff = abs(y - location.y)
+        if (yDiff > range) return null
+        return abs(range - yDiff)
+    }
 }

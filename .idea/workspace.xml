@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ce67c48-829c-4eec-a257-3ee7e0361479" name="Changes" comment="Day13">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/days/day15/Day15.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/days/day15/Point.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/days/day15/Sensor.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/days/day15/SensorGrid.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/days/day15/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/days/day15/Day15Test.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/days/day15/testInput.txt" afterDir="false" />
+    <list default="true" id="7ce67c48-829c-4eec-a257-3ee7e0361479" name="Changes" comment="Day15">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/days/day15/Sensor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/days/day15/Sensor.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/days/day15/SensorGrid.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/days/day15/SensorGrid.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +106,7 @@
       <recent name="days.day05" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.MainKt">
+  <component name="RunManager" selected="Gradle.Day15Test">
     <configuration name="Day14Test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -213,8 +208,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.MainKt" />
         <item itemvalue="Gradle.Day15Test" />
+        <item itemvalue="Kotlin.MainKt" />
         <item itemvalue="Gradle.Day15Test.can solve part 2 with test input" />
         <item itemvalue="Gradle.Day15Test.can solve part 1 with test input" />
         <item itemvalue="Gradle.Day14Test" />
@@ -245,6 +240,8 @@
       <workItem from="1670680845425" duration="2299000" />
       <workItem from="1671046914235" duration="10736000" />
       <workItem from="1671107467580" duration="6242000" />
+      <workItem from="1671135611141" duration="109000" />
+      <workItem from="1671290100019" duration="6841000" />
     </task>
     <task id="LOCAL-00001" summary="Hello World">
       <created>1669930661908</created>
@@ -372,7 +369,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671057151758</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Day15 Inefficient">
+      <created>1671135635734</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1671135635734</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -408,7 +412,9 @@
     <MESSAGE value="Day 12" />
     <MESSAGE value="Day 13" />
     <MESSAGE value="Day 14" />
-    <option name="LAST_COMMIT_MESSAGE" value="Day 14" />
+    <MESSAGE value="Day15 Inefficient" />
+    <MESSAGE value="Day15" />
+    <option name="LAST_COMMIT_MESSAGE" value="Day15" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
